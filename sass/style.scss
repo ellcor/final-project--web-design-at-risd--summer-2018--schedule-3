@@ -1,0 +1,128 @@
+// ========================================================================================
+// Variables
+// ========================================================================================
+
+// Colors
+$color--background: #fff;
+$color--text: #333;
+$color--header-home: #fff;
+$color--header-general: #333;
+$color--accent: #c9e0ea;
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+// .hero {
+//     width: 100%;
+//     height: 100%;
+//     min-width: 100%;
+//     min-height: 100%;
+//     position: relative;
+//     }
+
+// .hero::before {
+//     background-image: url("img/desk-birds-eye-view.jpg");
+//     background-size: cover;
+//     content: "Blah blah blah";
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: -2;
+//     opacity: 0.4;
+//     }
+
+#home-image {
+    height: 100%;
+    width: 100%;
+}
+
+#hero-h1{
+    font-size: 3em;
+    font-family: montserrat, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 320px) {
+    .hero::before {
+    background-image: url("img/desk-birds-eye-view.jpg");;
+    }
+    }
+    
+    @media (min-width: 460px) {
+    .hero::before {
+    background-image: url("img/desk-birds-eye-view.jpg");;
+    }
+    }
+    
+    @media (min-width: 720px) {
+    .hero::before {
+    background-image: url("img/desk-birds-eye-view.jpg");;
+    }
+    }
+    
+    @media (min-width: 980px) {
+    .hero::before {
+    background-image: url("img/desk-birds-eye-view.jpg");;
+    }
+    }
+    
+    @media (min-width: 1240px) {
+    .hero::before {
+    background-image: url("img/desk-birds-eye-view.jpg");;
+    }
+    }
+
+
+nav {
+    background-color: transparent;
+ 
+    ul {
+       display: flex;
+       list-style-type: none;
+       width: 400px;
+       margin: auto;
+ 
+       @media (max-width: 800px) {
+          display: block;
+       }
+ 
+       li {
+          text-align: center;
+          width: 100px;
+ 
+          a {
+             display: block;
+             font-family: montserrat, sans-serif;
+             text-decoration: none;
+             color: $color--text;
+             transition: 350ms;
+             width: 100%;
+             padding: 12px 0;
+ 
+             &:hover {
+                background-color: $color--accent;
+             }
+          }
+       }
+    }
+ }
+
+ .portfolio-photos {
+     display: block;
+
+     > img {
+         width: 500px;
+         margin: 5px;
+     }
+ }
